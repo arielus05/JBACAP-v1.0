@@ -24,7 +24,7 @@ public class jailbreakProgramWithoutAutoClicker {
   Timer timer;
   int second, minute, hour;
   String ddSecond, ddMinute, ddHour;
-  String url = "https://web.roblox.com/games/606849621/Jailbreak?privateServerLinkCode=77567232553705604082582715178127";
+  String url = "https://www.roblox.com/games/606849621?privateServerLinkCode=53525668319784613901112035620824";
   DecimalFormat dFormat = new DecimalFormat("00");
 
   public static void main(String args[]) {
