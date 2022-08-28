@@ -8,6 +8,10 @@ I just modified it to work how I wanted it to work :)
 
 **If you will not be AFK while having your PC on, use jailbreakProgramWithoutAutoClicker.java instead of jailbreakProgram.java**
 
+-- Overview --
+What this does is that the main program (jailbreakProgram.java) counts down the hours, minutes, and seconds that are left until the new set of contracts arrives.
+When it does, it opens up a link to a private server and that activates the 16h countdown timer without having to keep track of the time or even being there to do it yourself!
+
 -- Instructions --
 *Before downloading the files, you need an IDE that supports Java, and I recommend using either Visual Studio Code or jGRASP to open up and use these files.*
 *Also, steps 1 & 2 deal with jailbreakProgram.java only, so if you're using jailbreakProgramWithoutAutoClicker.java, then you can skip those steps*
