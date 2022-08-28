@@ -110,7 +110,7 @@ public class jailbreakProgram {
           counterLabel.setText(ddHour + ":" + ddMinute + ":" + ddSecond);
         }
 
-        if (hour == 0 && minute == 0 && second == 0) {
+        if (hour <= -1) {
           timer.stop();
           if (Desktop.isDesktopSupported()) {
             Desktop desktop = Desktop.getDesktop();
