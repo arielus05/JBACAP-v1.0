@@ -15,24 +15,26 @@ import java.net.URI;
 import java.net.URISyntaxException;
 import java.time.LocalDateTime;
 
-public class jailbreakProgramWithoutAutoClicker {
+public class helperProgramWithoutAutoClicker {
 
   JFrame window;
-  JLabel counterLabel, counterLabel2;
+  JLabel counterLabel, counterLabel2, label24HourTime, labelTimer;
   Font font1 = new Font("Arial", Font.PLAIN, 40);
-  Font font2 = new Font("Arial", Font.PLAIN, 100);
+  Font font2 = new Font("Arial", Font.PLAIN, 80);
+  Font font3 = new Font("Arial", Font.PLAIN, 20);
   Timer timer;
   int second, minute, hour;
   String ddSecond, ddMinute, ddHour;
   String url = "https://www.roblox.com/games/606849621?privateServerLinkCode=53525668319784613901112035620824";
   DecimalFormat dFormat = new DecimalFormat("00");
+  
 
-  public static void main(String args[]) {
+  public void functionJB() {
 
-      new jailbreakProgramWithoutAutoClicker();
+      new helperProgramWithoutAutoClicker();
   }
 
-  public jailbreakProgramWithoutAutoClicker() {
+  public helperProgramWithoutAutoClicker() {
 
     window = new JFrame();
     window.setSize(800, 600);
@@ -40,7 +42,7 @@ public class jailbreakProgramWithoutAutoClicker {
     window.setLayout(null);
     
     counterLabel = new JLabel("");
-    counterLabel.setBounds(175, 300, 400, 200);
+    counterLabel.setBounds(185, 300, 400, 200);
     counterLabel.setVerticalAlignment(JLabel.BOTTOM);
     counterLabel.setHorizontalAlignment(JLabel.CENTER);
     counterLabel.setFont(font1);
@@ -51,19 +53,34 @@ public class jailbreakProgramWithoutAutoClicker {
     counterLabel2.setHorizontalAlignment(JLabel.CENTER);
     counterLabel2.setFont(font2);
     
+    label24HourTime = new JLabel("24-Hour Time");
+    label24HourTime.setBounds(190, 100, 400, 200);
+    label24HourTime.setVerticalAlignment(JLabel.CENTER);
+    label24HourTime.setHorizontalAlignment(JLabel.CENTER);
+    label24HourTime.setFont(font3);
+    
+    labelTimer = new JLabel("Countdown Timer");
+    labelTimer.setBounds(185, 335, 400, 200);
+    labelTimer.setVerticalAlignment(JLabel.CENTER);
+    labelTimer.setHorizontalAlignment(JLabel.CENTER);
+    labelTimer.setFont(font3);
+    
     window.add(counterLabel);
     window.add(counterLabel2);
+    window.add(label24HourTime);
+    window.add(labelTimer);
     window.setVisible(true);
 
     // Countdown Timer
     counterLabel.setText("00:00:00");
-    counterLabel2.setText("00:00:00");
+    counterLabel2.setText(jbMainProgramWithoutAutoClicker.finalTime);
     second = 0;
-    minute = 0;
-    hour = 0;
+    minute = jbMainProgramWithoutAutoClicker.minutesNeeded;
+    hour = jbMainProgramWithoutAutoClicker.hoursNeeded;
     countdownTimer();
     timer.start();
     
+  
     // Autoclicker (to not make PC go to sleep)
     /* try {
       while (true) {

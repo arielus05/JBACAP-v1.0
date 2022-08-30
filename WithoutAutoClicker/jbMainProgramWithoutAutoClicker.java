@@ -4,20 +4,24 @@ import java.time.LocalDateTime;
 import java.io.*;
 import java.util.*;
 
-public class hoursCalculator
+public class jbMainProgramWithoutAutoClicker
 {
-   public static void main(String args[])
+   
+   static int hours, minutes, seconds, hoursNeeded, minutesNeeded, finalHours, finalMinutes;
+   static String finalTime;
+   
+   public static void main(String args[]) 
    {
-   
+      
    LocalDateTime now = LocalDateTime.now();
-   int hours, minutes, seconds, hoursNeeded, minutesNeeded, finalHours, finalMinutes;
-   String tomorrow = "";
    
+   String tomorrow = "";
+      
    hours = now.getHour();
    minutes = now.getMinute();
    seconds = now.getSecond();
    
-   System.out.println("NOTE: THE TIME IS SHOWN IN MILITARY TIME!");
+   System.out.println("NOTE: THE TIME IS SHOWN IN 24-HOUR TIME!");
    System.out.println("");
 
    System.out.println("The current time is... " + hours + "h:" + minutes + "m:" + seconds + "s");
@@ -42,7 +46,24 @@ public class hoursCalculator
    }
    
    System.out.println("");
-   System.out.println("The time you have to get on is at --> " + finalHours + "h:" + finalMinutes + "m:" + seconds + "s" + tomorrow);
    
+   if ((finalMinutes < 10) && (seconds < 10)) {
+      finalTime = finalHours + ":0" + finalMinutes + ":0" + seconds;
    }
+   else if (finalMinutes < 10) {
+      finalTime = finalHours + ":0" + finalMinutes + ":" + seconds;
+   }
+   else if (seconds < 10) { 
+      finalTime = finalHours + ":" + finalMinutes + ":0" + seconds;
+   }
+   else {
+      finalTime = finalHours + ":" + finalMinutes + ":" + seconds;
+   }
+   
+   System.out.println("The time you have to get on is at --> " + finalTime + tomorrow);
+    
+   helperProgramWithoutAutoClicker helperProgramWithoutAutoClickerObject = new helperProgramWithoutAutoClicker();
+   helperProgramWithoutAutoClickerObject.functionJB();
+   
+   }  
 }
