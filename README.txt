@@ -19,7 +19,7 @@ When the timer ends, it opens up a link to a private server and that activates t
 -This is so when the program ends and it activates the contracts, it goes to sleep shortly afterwards and you don't have to worry about your PC being on all day.
 3. Choose which folder to use. "WithAutoClicker" is meant to be used while you're AFK, while "WithoutAutoClicker" is meant to be used when you are want to use the PC at the same time.
 4. Download the two .java files in the chosen folder.
-5. Open the two .java files in an IDE.
+5. Open the two .java files in an IDE and then SAVE both of them.
 6. Go on jbMainProgram.java and Jailbreak at the same time to look at how much time you have until the next set of contracts come in.
 7. Run jbMainProgram.java by doing Crtl+R and follow what the comments/compile messages tell you to do.
 8. You're done! A window should've popped up with the 24-Hour Time of when the new set of contracts are going to appear and a countdown timer with your inputted hours and minutes.
