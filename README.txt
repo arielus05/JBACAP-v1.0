@@ -1,4 +1,4 @@
-JBACAP v2.0: Jailbreak-Activate-Contracts-Automatically-Program (Roblox)
+Jailbreak-Activate-Contracts-Automatically-Program (Roblox)
 
 To activate contracts in Jailbreak after the time of the current set of contracts is up, you have to be in-game and then a 16h countdown timer starts from the moment you enter in-game.
 I know that my friends and I cannot perfectly go in-game every 16h every single time, and so I devised a program that can do it for us!
