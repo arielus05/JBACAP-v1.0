@@ -25,7 +25,7 @@ public class helperProgram {
   Timer timer;
   int second, minute, hour;
   String ddSecond, ddMinute, ddHour;
-  String url = "https://www.roblox.com/games/606849621?privateServerLinkCode=53525668319784613901112035620824";
+  String url = "https://www.roblox.com/games/6798894589?privateServerLinkCode=14953110956829127988251274602395";
   DecimalFormat dFormat = new DecimalFormat("00");
   
 
